@@ -1,27 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  transition: all 300ms, color 30ms;
+  outline: none;
+  @apply placeholder:select-none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+img {
+  user-select: none;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container-0 {
+  @apply md:px-16 px-8 py-4;
+}
+
+.btn-0 {
+  @apply bg-OpenColor-gray-1 dark:bg-OpenColor-gray-8 px-4 py-2 rounded-xl cursor-pointer hover:ring-2 ring-2 ring-main ring-offset-4 ring-transparent dark:ring-transparent hover:ring-main hover:dark:ring-current hover:ring-offset-2 dark:ring-offset-OpenColor-gray-9 focus:ring-main focus:dark:ring-current;
+}
+
+.btn-1 {
+  @apply cursor-pointer p-2 rounded-lg focus:border-main bg-OpenColor-gray-3 dark:bg-OpenColor-gray-7/60 hover:bg-OpenColor-gray-4 hover:dark:bg-OpenColor-gray-7;
+}
+
+.btn-click {
+  @apply cursor-pointer border-b-2 dark:border-OpenColor-gray-7 hover:border-main hover:dark:border-OpenColor-gray-0 focus:border-main;
+}
+
+.btn-hover {
+  @apply cursor-default border-b-2 hover:border-main border-dotted focus:border-main;
+}
+
+.ring-0 {
+  @apply ring-2 ring-main cursor-pointer ring-transparent hover:ring-main;
+}
+
+.pad {
+  @apply bg-OpenColor-gray-1 dark:bg-OpenColor-gray-8 p-4 rounded-xl;
+}
+
+input {
+  @apply bg-transparent !cursor-text px-2 py-1 btn-click;
+}
+
+textarea {
+  transition: all 300ms, height 0ms;
+  @apply bg-transparent !cursor-text px-2 py-1 btn-click pad;
+}
+
+code {
+  @apply bg-OpenColor-gray-1 dark:bg-OpenColor-gray-8 p-1 rounded-md;
+}
+
+.text-1 {
+  @apply text-OpenColor-gray-7/90 dark:text-OpenColor-gray-1/90;
+}
+
+hr {
+  @apply border-OpenColor-gray-3 dark:border-OpenColor-gray-8;
+}
+
+.bg-1 {
+  @apply bg-OpenColor-gray-3 dark:bg-OpenColor-gray-8;
+}
+
+.header {
+  @apply font-bold text-3xl md:text-5xl;
+}
+
+.center {
+  @apply flex justify-center items-center;
+}
+
+.title {
+  @apply font-bold md:text-2xl text-xl;
+}
+
+.subtitle {
+  @apply text-1 md:text-base text-sm;
 }
