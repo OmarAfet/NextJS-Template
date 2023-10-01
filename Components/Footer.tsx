@@ -1,7 +1,7 @@
 "use client";
 
 import AllPages from "./AllPages";
-import MainLogo from "./MainLogo";
+import Logo from "./Logo";
 import SwitchThemeButton from "./SwitchThemeButton";
 
 export default function Footer() {
@@ -10,7 +10,7 @@ export default function Footer() {
 			<div className="flex flex-col mt-64">
 				<hr />
 				<div className="flex flex-col md:flex-row items-start gap-16 justify-between mx-32 my-16">
-					<MainLogo />
+					<Logo />
 					<div className="flex flex-col gap-2">
 						<div className="title">Pages</div>
 						<div className="flex flex-col gap-2 text-left items-start">

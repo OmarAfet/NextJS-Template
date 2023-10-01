@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import MainLogo from "./MainLogo";
+import Logo from "./Logo";
 
 function NavbarElements() {
 	return (
@@ -21,7 +21,7 @@ export default function Navbar() {
 	return (
 		<>
 			<div className="container-0 flex justify-between items-center mb-32">
-				<MainLogo />
+				<Logo />
 				<div className="md:flex hidden gap-8 items-center">
 					<NavbarElements />
 				</div>
