@@ -3,6 +3,7 @@ export default function Home() {
 		<>
 			<div className="header center">Home</div>
 			<div className="subtitle center">This is the Home Page.</div>
+			<div className="subtitle center">made by OmarAfet</div>
 		</>
 	);
 }
