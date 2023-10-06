@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<Toaster position="top-center" reverseOrder={false} />
 				<Providers>
 					<Navbar />
-					<main>{children}</main>
+					<main className="mt-8 px-16 container m-auto">{children}</main>
 					<Footer />
 				</Providers>
 			</body>
