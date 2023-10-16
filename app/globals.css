@@ -7,11 +7,6 @@
 * {
   transition: all 300ms, color 30ms;
   outline: none;
-  @apply placeholder:select-none;
-}
-
-img {
-  user-select: none;
 }
 
 body {
@@ -55,12 +50,34 @@ textarea {
   @apply bg-transparent !cursor-text px-2 py-1 btn-click pad;
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floating {
+  animation: float 8s ease-in-out infinite;
+}
+
 code {
   @apply bg-OpenColor-gray-1 dark:bg-OpenColor-gray-8 p-1 rounded-md;
 }
 
 .text-1 {
   @apply text-OpenColor-gray-7/90 dark:text-OpenColor-gray-1/90;
+}
+
+.text-2 {
+  @apply text-OpenColor-gray-7/60 dark:text-OpenColor-gray-1/60;
 }
 
 hr {
@@ -85,4 +102,16 @@ hr {
 
 .subtitle {
   @apply text-1 md:text-base text-sm;
+}
+
+.hover-1 {
+  @apply relative top-0 hover:-top-1 duration-150;
+}
+
+.success {
+  @apply !border-OpenColor-green-6;
+}
+
+.error {
+  @apply !border-OpenColor-red-6;
 }
