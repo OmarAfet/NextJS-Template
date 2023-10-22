@@ -26,7 +26,7 @@ body {
 }
 
 .btn-click {
-  @apply cursor-pointer border-b-2 dark:border-OpenColor-gray-7 hover:border-main hover:dark:border-OpenColor-gray-0 focus:border-main;
+  @apply cursor-pointer border-b-2 dark:border-OpenColor-gray-7 hover:border-main hover:dark:border-OpenColor-gray-0 focus:border-main focus:dark:border-OpenColor-gray-0;
 }
 
 .btn-hover {
@@ -85,11 +85,11 @@ hr {
 }
 
 .bg-1 {
-  @apply bg-OpenColor-gray-3 dark:bg-OpenColor-gray-8;
+  @apply bg-OpenColor-gray-2 dark:bg-OpenColor-gray-8;
 }
 
 .header {
-  @apply font-bold text-3xl md:text-5xl;
+  @apply font-bold text-4xl md:text-5xl;
 }
 
 .center {
@@ -105,13 +105,33 @@ hr {
 }
 
 .hover-1 {
-  @apply relative top-0 hover:-top-1 duration-150;
+  @apply relative top-0 hover:-top-1 duration-150 cursor-pointer;
 }
 
-.success {
+.success-border {
   @apply !border-OpenColor-green-6;
 }
 
-.error {
+.error-border {
   @apply !border-OpenColor-red-6;
+}
+
+.success-bg {
+  @apply !bg-OpenColor-green-6;
+}
+
+.error-bg {
+  @apply !bg-OpenColor-red-6;
+}
+
+.mx-main {
+  @apply mx-[10%];
+}
+
+.dot {
+  @apply w-2 h-2 rounded-full;
+}
+
+.border-left {
+  @apply border-l-2 border-main pl-8;
 }
