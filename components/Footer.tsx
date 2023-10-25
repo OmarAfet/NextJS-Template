@@ -1,10 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import AllPages from "./AllPages";
 import Logo from "./Logo";
 import SwitchThemeButton from "./SwitchThemeButton";
-import { RiTwitterXFill, RiInstagramFill, RiTiktokFill } from "react-icons/ri";
+import Socials from "./Socials";
 
 export default function Footer() {
 	return (
@@ -14,20 +13,10 @@ export default function Footer() {
 				<div className="flex flex-col md:flex-row items-start gap-16 justify-between mx-32 my-16">
 					<div className="flex flex-col gap-2">
 						<Logo />
-						<div className="flex gap-2 text-left items-center">
-							<Link className="opacity-50 hover:opacity-100" target="_blank" href="https://x.com">
-								<RiTwitterXFill />
-							</Link>
-							<Link className="opacity-50 hover:opacity-100" target="_blank" href="https://instagram.com">
-								<RiInstagramFill />
-							</Link>
-							<Link className="opacity-50 hover:opacity-100" target="_blank" href="https://tiktok.com">
-								<RiTiktokFill />
-							</Link>
-						</div>
+						<Socials size={20} />
 					</div>
 					<div className="flex flex-col gap-2">
-						<div className="title">Pages</div>
+						<div className="title">Sections</div>
 						<div className="flex flex-col gap-2 text-left items-start">
 							<AllPages />
 						</div>
