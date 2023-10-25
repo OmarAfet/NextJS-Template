@@ -7,7 +7,7 @@ import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
 	title: "NextJS Template by OmarAfet",
-	description: "NextJS Template with TypeScript and TailwindCSS",
+	description: "Latest Defualt NextJS App Template",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
