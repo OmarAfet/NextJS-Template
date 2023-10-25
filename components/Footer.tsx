@@ -1,5 +1,3 @@
-"use client";
-
 import AllPages from "./AllPages";
 import Logo from "./Logo";
 import SwitchThemeButton from "./SwitchThemeButton";
