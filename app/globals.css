@@ -9,12 +9,20 @@
   outline: none;
 }
 
+.no-transition * {
+  transition: none !important;
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
 }
 
 .container-0 {
   @apply md:px-16 px-8 py-4;
+}
+
+button {
+  @apply btn-0;
 }
 
 .btn-0 {
