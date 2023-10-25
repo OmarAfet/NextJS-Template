@@ -1,32 +1,33 @@
 {
-  "name": "nextjs-template",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "rebuild": "next build && next start",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@heroicons/react": "latest",
-    "next": "latest",
-    "next-themes": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-hot-toast": "latest",
-    "react-icons": "latest"
-  },
-  "devDependencies": {
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "autoprefixer": "latest",
-    "eslint": "latest",
-    "eslint-config-next": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest",
-    "typescript": "latest"
-  }
+	"name": "nextjs-template",
+	"description": "Latest Defualt NextJS App Template",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"rebuild": "next build && next start",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@heroicons/react": "latest",
+		"next": "latest",
+		"next-themes": "latest",
+		"react": "latest",
+		"react-dom": "latest",
+		"react-hot-toast": "latest",
+		"react-icons": "latest"
+	},
+	"devDependencies": {
+		"@types/node": "latest",
+		"@types/react": "latest",
+		"@types/react-dom": "latest",
+		"autoprefixer": "latest",
+		"eslint": "latest",
+		"eslint-config-next": "latest",
+		"postcss": "latest",
+		"tailwindcss": "latest",
+		"typescript": "latest"
+	}
 }
