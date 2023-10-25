@@ -1,17 +1,21 @@
 # Getting Started
 
-1. Clone the repository with this command:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/OmarAfet/NextJS-Template.git .
 ```
 
-2. Install the packages with this command:
+2. Install the packages:
 
 ```bash
 npm i
 ```
 
-3. Congrats.
+3. Run it:
 
-type 
+```bash
+npm run dev
+```
+
+4. Congrats.
