@@ -4,6 +4,7 @@
 
 ```bash
 git clone https://github.com/OmarAfet/NextJS-Template.git .
+git remote rm origin
 npm i
 npm run dev
 ```
