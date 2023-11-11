@@ -14,7 +14,7 @@ export default function Footer() {
 						<Socials size={20} />
 					</div>
 					<div className="flex flex-col gap-2">
-						<div className="title">Sections</div>
+						<div className="title">Pages</div>
 						<div className="flex flex-col gap-2 text-left items-start">
 							<AllPages />
 						</div>
