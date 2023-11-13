@@ -7,8 +7,8 @@ const ToastPromise: ToastPromiseFunction = (customFunction, loadingMessage, succ
 		customFunction(),
 		{
 			loading: loadingMessage,
-			success: <b>{successMessage}</b>,
-			error: <b>{errorMessage}</b>,
+			success: successMessage,
+			error: errorMessage,
 		},
 		{
 			duration: 10000,
