@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
+import clsx from "clsx";
 
 function NavbarElements() {
 	return (
@@ -38,7 +39,11 @@ export default function Navbar() {
 							stroke="currentColor"
 							className="w-10 h-10"
 						>
-							<path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+							/>
 						</svg>
 					) : (
 						<svg
@@ -52,12 +57,24 @@ export default function Navbar() {
 							stroke="currentColor"
 							className="w-10 h-10"
 						>
-							<path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								d="M6 18L18 6M6 6l12 12"
+							/>
 						</svg>
 					)}
 				</div>
 			</div>
-			<div className={`absolute w-full bg-white dark:bg-OpenColor-gray-9 z-10 flex flex-col p-4 gap-4 items-center border-b-2 ${openMenu ? "transform translate-y-0 opacity-100" : "transform -translate-y-5 opacity-0 pointer-events-none"}`}>
+			<div
+				className={clsx(
+					"absolute w-full bg-white dark:bg-OpenColor-gray-9 z-10 flex flex-col p-4 gap-4 items-center border-b-2",
+					{
+						"transform translate-y-0 opacity-100": openMenu,
+						"transform -translate-y-5 opacity-0 pointer-events-none": !openMenu,
+					},
+				)}
+			>
 				<NavbarElements />
 			</div>
 		</>
