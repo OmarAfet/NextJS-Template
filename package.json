@@ -27,6 +27,7 @@
 		"eslint": "latest",
 		"eslint-config-next": "latest",
 		"postcss": "latest",
+		"prettier": "latest",
 		"tailwindcss": "latest",
 		"typescript": "latest"
 	}
