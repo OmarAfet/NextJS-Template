@@ -20,7 +20,7 @@ button {
 }
 
 .btn-0 {
-  @apply bg-OpenColor-gray-1 dark:bg-OpenColor-gray-8 px-4 py-2 rounded-xl cursor-pointer hover:ring-2 ring-2 ring-main ring-offset-4 ring-transparent dark:ring-transparent hover:ring-main hover:dark:ring-current hover:ring-offset-2 dark:ring-offset-OpenColor-gray-9 focus:ring-main focus:dark:ring-current;
+  @apply !bg-OpenColor-gray-2 dark:!bg-OpenColor-gray-8 px-4 py-2 rounded-xl cursor-pointer hover:ring-2 ring-2 ring-main ring-offset-4 ring-transparent dark:ring-transparent hover:ring-main hover:dark:ring-current hover:ring-offset-2 dark:ring-offset-OpenColor-gray-9 focus:ring-main focus:dark:ring-current;
 }
 
 .btn-1 {
@@ -86,8 +86,16 @@ hr {
   @apply border-OpenColor-gray-3 dark:border-OpenColor-gray-8;
 }
 
+.hr-0 {
+  @apply border-OpenColor-gray-4 dark:border-OpenColor-gray-7;
+}
+
 .bg-1 {
   @apply bg-OpenColor-gray-2 dark:bg-OpenColor-gray-8;
+}
+
+.bg-2 {
+  @apply bg-OpenColor-gray-3 dark:bg-OpenColor-gray-7;
 }
 
 .header {
@@ -123,7 +131,15 @@ hr {
 }
 
 .error-bg {
-  @apply !bg-OpenColor-red-6;
+  @apply !bg-OpenColor-red-6 dark:!bg-OpenColor-red-6;
+}
+
+.success-text {
+  @apply !text-OpenColor-green-6;
+}
+
+.error-text {
+  @apply !text-OpenColor-red-6;
 }
 
 .mx-main {
@@ -136,4 +152,16 @@ hr {
 
 .border-left {
   @apply border-l-2 border-main pl-8;
+}
+
+.active {
+  @apply border-main dark:border-OpenColor-gray-0;
+}
+
+.disabled {
+  @apply opacity-50 cursor-not-allowed pointer-events-none;
+}
+
+.text-hover {
+  @apply cursor-pointer opacity-50 hover:opacity-100;
 }
