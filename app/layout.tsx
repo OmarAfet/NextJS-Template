@@ -5,6 +5,7 @@ import ThemeProviders from "./ThemeProvider";
 import type { Metadata } from "next";
 import { Toaster } from "react-hot-toast";
 import { Ubuntu } from "next/font/google";
+import { ReactNode } from "react";
 
 const ubuntu = Ubuntu({
 	subsets: ["latin"],
@@ -12,15 +13,14 @@ const ubuntu = Ubuntu({
 });
 
 export const metadata: Metadata = {
-	title: "NextJS Template by OmarAfet",
+	title: {
+		default: "NextJS Template by OmarAfet",
+		template: "%s | NextJS Template",
+	},
 	description: "Latest Defualt NextJS App Template",
 };
 
-export default function RootLayout({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
 	return (
 		<html lang="en" className="!scroll-smooth" suppressHydrationWarning>
 			<body
