@@ -1,13 +1,7 @@
 import { toast } from "react-hot-toast";
+import type { ToastPromiseType } from "@/types";
 
-type ToastPromiseFunction = (
-	customFunction: () => Promise<any>,
-	loadingMessage: string,
-	successMessage: string,
-	errorMessage: string,
-) => Promise<any>;
-
-const ToastPromise: ToastPromiseFunction = (
+const ToastPromise: ToastPromiseType = (
 	customFunction,
 	loadingMessage,
 	successMessage,
