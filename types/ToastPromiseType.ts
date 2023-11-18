@@ -1,8 +1,3 @@
-type ToastPromiseType = (
-	customFunction: () => Promise<any>,
-	loadingMessage: string,
-	successMessage: string,
-	errorMessage: string,
-) => Promise<any>;
+type ToastPromiseType = (customFunction: () => Promise<any>, loadingMessage: string, successMessage: string, errorMessage: string) => Promise<any>;
 
 export default ToastPromiseType;

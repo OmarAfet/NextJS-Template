@@ -6,25 +6,13 @@ export default function Socials({ size }: { size: number }) {
 
 	return (
 		<div className="flex gap-2 text-left items-center">
-			<Link
-				className="opacity-50 hover:opacity-100"
-				target="_blank"
-				href="https://x.com"
-			>
+			<Link className="opacity-50 hover:opacity-100" target="_blank" href="https://x.com">
 				<RiTwitterXFill style={{ height: customSize, width: customSize }} />
 			</Link>
-			<Link
-				className="opacity-50 hover:opacity-100"
-				target="_blank"
-				href="https://github.com"
-			>
+			<Link className="opacity-50 hover:opacity-100" target="_blank" href="https://github.com">
 				<RiGithubFill style={{ height: customSize, width: customSize }} />
 			</Link>
-			<Link
-				className="opacity-50 hover:opacity-100"
-				target="_blank"
-				href="https://www.tiktok.com"
-			>
+			<Link className="opacity-50 hover:opacity-100" target="_blank" href="https://www.tiktok.com">
 				<RiTiktokFill style={{ height: customSize, width: customSize }} />
 			</Link>
 		</div>

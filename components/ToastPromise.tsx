@@ -1,12 +1,7 @@
 import { toast } from "react-hot-toast";
 import type { ToastPromiseType } from "@/types";
 
-const ToastPromise: ToastPromiseType = (
-	customFunction,
-	loadingMessage,
-	successMessage,
-	errorMessage,
-) =>
+const ToastPromise: ToastPromiseType = (customFunction, loadingMessage, successMessage, errorMessage) =>
 	toast.promise(
 		customFunction(),
 		{
@@ -17,8 +12,7 @@ const ToastPromise: ToastPromiseType = (
 		{
 			duration: 10000,
 			style: {
-				backgroundColor:
-					localStorage.getItem("theme") === "dark" ? "#343a40" : "#f1f3f5",
+				backgroundColor: localStorage.getItem("theme") === "dark" ? "#343a40" : "#f1f3f5",
 				color: localStorage.getItem("theme") === "dark" ? "#f1f3f5" : "#343a40",
 			},
 		},
