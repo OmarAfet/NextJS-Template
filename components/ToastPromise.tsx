@@ -1,8 +1,18 @@
 import { toast } from "react-hot-toast";
 
-type ToastPromiseFunction = (customFunction: () => Promise<any>, loadingMessage: string, successMessage: string, errorMessage: string) => Promise<any>;
+type ToastPromiseFunction = (
+	customFunction: () => Promise<any>,
+	loadingMessage: string,
+	successMessage: string,
+	errorMessage: string,
+) => Promise<any>;
 
-const ToastPromise: ToastPromiseFunction = (customFunction, loadingMessage, successMessage, errorMessage) =>
+const ToastPromise: ToastPromiseFunction = (
+	customFunction,
+	loadingMessage,
+	successMessage,
+	errorMessage,
+) =>
 	toast.promise(
 		customFunction(),
 		{
@@ -13,10 +23,11 @@ const ToastPromise: ToastPromiseFunction = (customFunction, loadingMessage, succ
 		{
 			duration: 10000,
 			style: {
-				backgroundColor: localStorage.getItem("theme") === "dark" ? "#343a40" : "#f1f3f5",
+				backgroundColor:
+					localStorage.getItem("theme") === "dark" ? "#343a40" : "#f1f3f5",
 				color: localStorage.getItem("theme") === "dark" ? "#f1f3f5" : "#343a40",
 			},
-		}
+		},
 	);
 
 export default ToastPromise;
