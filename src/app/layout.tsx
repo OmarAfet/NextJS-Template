@@ -1,7 +1,7 @@
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import ThemeProviders from "./ThemeProvider";
+import Navbar from "@/src/components/Navbar";
+import Footer from "@/src/components/Footer";
+import ThemeProviders from "@/src/providers/ThemeProvider";
 import type { Metadata } from "next";
 import { Toaster } from "react-hot-toast";
 import { Ubuntu } from "next/font/google";
