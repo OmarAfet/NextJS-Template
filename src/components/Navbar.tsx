@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import clsx from "clsx";
+import SwitchThemeButton from "./SwitchThemeButton";
 
 function NavbarElements() {
 	return (
@@ -12,6 +13,7 @@ function NavbarElements() {
 				Home
 			</Link>
 			<hr className="md:hidden w-full" />
+			<SwitchThemeButton />
 		</>
 	);
 }
