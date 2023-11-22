@@ -6,13 +6,13 @@ import LoadingIcon from "./LoadingIcon";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 type CodeBlockProps = {
-	codeName?: string;
+	name?: string;
 	code: object;
 	language: string;
 };
 
-export default function CodeBlock({ codeName, code, language }: CodeBlockProps) {
-	codeName = codeName ?? language;
+export default function CodeBlock({ name, code, language }: CodeBlockProps) {
+	name = name ?? language;
 
 	const [copied, setCopied] = useState(false);
 	const [loading, setLoading] = useState(false);
@@ -32,7 +32,7 @@ export default function CodeBlock({ codeName, code, language }: CodeBlockProps) 
 	return (
 		<div className="rounded-md overflow-hidden">
 			<div className="bg-[#202123] px-4 py-2 flex justify-between">
-				<div>{codeName}</div>
+				<div>{name}</div>
 				<div onClick={copy} className={clsx("flex items-center gap-1", { "cursor-pointer": !copied })} aria-label="Copy code to clipboard">
 					{loading ? (
 						<LoadingIcon size={16} />
