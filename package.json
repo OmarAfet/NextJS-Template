@@ -19,7 +19,8 @@
 		"react-dom": "latest",
 		"react-hot-toast": "latest",
 		"react-icons": "latest",
-		"react-syntax-highlighter": "latest"
+		"react-syntax-highlighter": "latest",
+		"sharp": "latest"
 	},
 	"devDependencies": {
 		"@types/node": "latest",
