@@ -21,8 +21,8 @@ export default function SwitchThemeButton() {
 	}, []);
 
 	return (
-		<button onClick={ChangeTheme} className="btn-0 !p-2 flex items-center">
+		<div onClick={ChangeTheme} className="btn-0 !p-2 flex items-center">
 			{isClient ? theme === "dark" ? <SunIcon className="h-6 w-6" /> : <MoonIcon className="h-6 w-6" /> : <div className="h-6 w-6"></div>}
-		</button>
+		</div>
 	);
 }

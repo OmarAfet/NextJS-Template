@@ -1,15 +1,9 @@
-import Link from "next/link";
+import Hero from "../components/Hero";
 
 export default function HomePage() {
 	return (
 		<div className="flex flex-col gap-2">
-			<div className="header center">Home Page</div>
-			<div className="subtitle center">
-				made by{" "}
-				<Link className="ml-1 btn-click" href="https://github.com/OmarAfet">
-					OmarAfet
-				</Link>
-			</div>
+			<Hero />
 		</div>
 	);
 }

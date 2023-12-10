@@ -7,6 +7,7 @@ git clone https://github.com/OmarAfet/NextJS-Template.git .
 git remote rm origin
 npm i
 npm run dev
+Get-ChildItem -Recurse -Filter "DELETE THIS" | Remove-Item
 ```
 
 2. Congrats.

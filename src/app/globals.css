@@ -78,12 +78,20 @@ code {
 	@apply bg-OpenColor-gray-1 dark:bg-OpenColor-gray-8 p-1 rounded-md;
 }
 
+.text-default {
+	@apply text-OpenColor-gray-7 dark:text-OpenColor-gray-1;
+}
+
 .text-1 {
 	@apply text-OpenColor-gray-7/90 dark:text-OpenColor-gray-1/90;
 }
 
 .text-2 {
 	@apply text-OpenColor-gray-7/60 dark:text-OpenColor-gray-1/60;
+}
+
+.text-hover {
+	@apply cursor-pointer opacity-50 hover:opacity-100;
 }
 
 hr {
@@ -158,14 +166,14 @@ hr {
 	@apply border-l-2 border-main pl-8;
 }
 
+.border-default {
+	@apply border-OpenColor-gray-3 dark:border-OpenColor-gray-8;
+}
+
 .active {
 	@apply border-main dark:border-OpenColor-gray-0;
 }
 
 .disabled {
 	@apply opacity-50 cursor-not-allowed pointer-events-none;
-}
-
-.text-hover {
-	@apply cursor-pointer opacity-50 hover:opacity-100;
 }

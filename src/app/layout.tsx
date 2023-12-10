@@ -1,5 +1,5 @@
 import "./globals.css";
-import Navbar from "@/src/components/Navbar";
+import Navbar from "@/src/components/Header";
 import Footer from "@/src/components/Footer";
 import ThemeProviders from "@/src/providers/ThemeProvider";
 import type { Metadata } from "next";
@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<Toaster position="top-center" reverseOrder={false} />
 				<ThemeProviders>
 					<Navbar />
-					<main className="mt-8 px-16 container m-auto">{children}</main>
+					<main>{children}</main>
 					<Footer />
 				</ThemeProviders>
 			</body>
