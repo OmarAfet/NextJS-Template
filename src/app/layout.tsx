@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 		default: "NextJS Template by OmarAfet",
 		template: "%s | NextJS Template",
 	},
-	description: "Latest Defualt NextJS App Template",
+	description: "A Next.js + Tailwindcss Template made by OmarAfet",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
