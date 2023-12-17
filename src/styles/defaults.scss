@@ -1,0 +1,13 @@
+@for $i from 1 through 10 {
+	.text-default-#{10 * $i} {
+		color: rgba(var(--text), 0.1 * $i);
+	}
+}
+
+.border-default {
+	@apply border border-[rgb(var(--border))] hover:border-[rgb(var(--text))] cursor-pointer;
+}
+
+.bg-default {
+	@apply bg-[rgb(var(--background))];
+}

@@ -1,0 +1,11 @@
+* {
+	transition:
+		all 300ms,
+		color 20ms;
+	border-color: rgb(var(--border));
+}
+
+body {
+	background-color: rgb(var(--background));
+	color: rgb(var(--text));
+}

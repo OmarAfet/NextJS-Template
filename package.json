@@ -11,7 +11,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"@headlessui/react": "^1.7.17",
+		"@headlessui/react": "latest",
 		"@heroicons/react": "latest",
 		"clsx": "latest",
 		"next": "latest",
@@ -33,6 +33,7 @@
 		"eslint-config-next": "latest",
 		"postcss": "latest",
 		"prettier": "latest",
+		"sass": "latest",
 		"tailwindcss": "latest",
 		"typescript": "latest"
 	}

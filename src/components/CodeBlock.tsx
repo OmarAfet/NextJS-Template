@@ -31,7 +31,7 @@ export default function CodeBlock({ name, code, language }: CodeBlockProps) {
 
 	return (
 		<div className="rounded-md overflow-hidden">
-			<div className="bg-[#202123] px-4 py-2 flex justify-between">
+			<div className="bg-[#202123] text-OpenColor-gray-1 px-4 py-2 flex justify-between">
 				<div>{name}</div>
 				<div onClick={copy} className={clsx("flex items-center gap-1", { "cursor-pointer": !copied })} aria-label="Copy code to clipboard">
 					{loading ? (
