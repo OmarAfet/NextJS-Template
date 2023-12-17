@@ -11,8 +11,8 @@ export default function Footer() {
 			<div className="xl:grid grid-cols-3 gap-8 mx-8">
 				<div>
 					<Logo className="text-4xl" />
-					<div className="text-sm mt-8">
-						<p className="mt-6 leading-8 text-default-50">
+					<div className="text-sm">
+						<p className="leading-8 text-default-50">
 							A{" "}
 							<Link href="https://nextjs.org/" className="clickable-button">
 								Next.js
