@@ -1,5 +1,5 @@
 .primary-button {
-	@apply text-white bg-[rgb(var(--primary-color))] px-4 py-2 shadow-sm rounded-md hover:bg-[color-mix(in_srgb,_rgb(var(--background))_20%,_rgb(var(--primary-color)))];
+	@apply text-white bg-main px-4 py-2 shadow-sm rounded-md hover:bg-[color-mix(in_srgb,_rgb(var(--background))_20%,_rgb(var(--primary-color)))];
 }
 
 .secondary-button {
@@ -12,4 +12,15 @@
 
 .hoverable-button {
 	@apply underline decoration-dotted decoration-1 cursor-default;
+}
+
+.border-button {
+	@apply border border-[rgb(var(--border))] hover:border-[rgb(var(--text))] cursor-pointer;
+}
+
+@each $direction in top, right, bottom, left {
+	.border-button-#{$direction} {
+		border-#{$direction}-width: 2px;
+		@apply hover:border-[rgb(var(--text))];
+	}
 }
