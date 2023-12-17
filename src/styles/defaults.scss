@@ -11,3 +11,7 @@
 .bg-default {
 	@apply bg-[rgb(var(--background))];
 }
+
+.bg-default-2 {
+	@apply bg-[rgb(var(--background-2))];
+}

@@ -1,7 +1,9 @@
 * {
 	transition:
-		all 300ms,
-		color 20ms;
+		background-color 300ms,
+		filter 300ms,
+		border-color 300ms;
+
 	border-color: rgb(var(--border));
 }
 

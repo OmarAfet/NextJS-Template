@@ -1,33 +1,45 @@
 // import Link from "next/link";
 import Link from "next/link";
 import Logo from "@/src/components/Logo";
-import Socials from "@/src/components/Socials";
+import Image from "next/image";
+import Socials from "./Socials";
 
 export default function Footer() {
 	const year = new Date().getFullYear();
 
 	return (
-		<footer className="p-8 pt-32 border-t">
-			<div className="xl:grid grid-cols-3 gap-8 mx-8">
-				<div>
-					<Logo className="text-4xl" />
-					<div className="text-sm">
-						<p className="leading-8 text-default-50">
-							A{" "}
-							<Link href="https://nextjs.org/" className="clickable-button">
-								Next.js
-							</Link>{" "}
-							+{" "}
-							<Link href="https://tailwindcss.com/" className="clickable-button">
-								Tailwindcss
-							</Link>{" "}
-							template created by{" "}
-							<Link href="https://github.com/omarafet" className="clickable-button">
-								@OmarAfet
-							</Link>
-						</p>
+		<footer className="p-8 bg-default-2">
+			<div className="xl:grid grid-cols-3 gap-8">
+				<div className="flex flex-col gap-4">
+					<div className="flex gap-4">
+						<Image quality={100} priority src="/Github Logo.png" className="w-24 h-24 p-2 opacity-80 dark:opacity-100 invert-0 dark:invert" width={344} height={344} alt="Logo" />
+						<div>
+							<Logo className="text-4xl" />
+							<div className="text-sm text-default-50">
+								<p className="leading-8 text-default-50">
+									A{" "}
+									<Link href="https://nextjs.org/" className="clickable-button">
+										Next.js
+									</Link>{" "}
+									+{" "}
+									<Link href="https://tailwindcss.com/" className="clickable-button">
+										Tailwindcss
+									</Link>{" "}
+									template created by{" "}
+									<Link href="https://github.com/omarafet" className="clickable-button">
+										@OmarAfet
+									</Link>
+								</p>
+								<p>
+									&copy; {year}{" "}
+									<Link href="" className="clickable-button">
+										Omar Afet
+									</Link>
+								</p>
+							</div>
+						</div>
 					</div>
-					<Socials size={24} className="mt-8" />
+					<Socials size={24} />
 				</div>
 				<div className="md:grid col-span-2 grid-cols-2 gap-8 mt-16 xl:mt-0">
 					<div className="grid grid-cols-2 gap-8">
@@ -140,9 +152,6 @@ export default function Footer() {
 						</div>
 					</div>
 				</div>
-			</div>
-			<div className="text-sm mt-24 pt-8 border-t text-default-60">
-				&copy; {year} <Logo className="text-sm font-normal" />, Inc. All rights reserved.
 			</div>
 		</footer>
 	);
