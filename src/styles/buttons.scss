@@ -7,7 +7,7 @@
 }
 
 .clickable-button {
-	@apply text-[rgb(var(--text))] border-b-2 hover:border-[rgb(var(--text))];
+	@apply border-b-2 duration-300 hover:text-[rgb(var(--text))] hover:border-[rgb(var(--text))];
 }
 
 .hoverable-button {
