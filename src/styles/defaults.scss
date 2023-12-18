@@ -1,14 +1,16 @@
 @for $i from 1 through 10 {
-	.text-default-#{10 * $i} {
-		color: rgba(var(--text), 0.1 * $i);
-	}
+	@layer utilities {
+		.text-default-#{10 * $i} {
+			color: rgba(var(--text), 0.1 * $i);
+		}
 
-	.border-default-#{10 * $i} {
-		border-color: rgba(var(--text), 0.1 * $i);
-	}
+		.border-default-#{10 * $i} {
+			border-color: rgba(var(--text), 0.1 * $i);
+		}
 
-	.bg-default-#{10 * $i} {
-		background-color: rgba(var(--text), 0.1 * $i);
+		.bg-default-#{10 * $i} {
+			background-color: rgba(var(--text), 0.1 * $i);
+		}
 	}
 }
 
