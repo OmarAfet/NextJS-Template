@@ -8,11 +8,6 @@
 	outline: none;
 }
 
-::selection {
-	background-color: rgb(var(--text));
-	color: rgb(var(--text));
-}
-
 ::-webkit-scrollbar {
 	width: 10px;
 	height: 10px;
@@ -25,4 +20,12 @@
 body {
 	background-color: rgb(var(--background));
 	color: rgb(var(--text));
+}
+
+.header {
+	@apply font-bold text-lg lg:text-3xl;
+}
+
+.center {
+	@apply flex items-center justify-center;
 }
