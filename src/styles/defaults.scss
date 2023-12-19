@@ -1,4 +1,4 @@
-@for $i from 1 through 10 {
+@for $i from 0 through 10 {
 	@layer utilities {
 		.text-default-#{10 * $i} {
 			color: rgba(var(--text), 0.1 * $i);
