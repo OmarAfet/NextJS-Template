@@ -8,6 +8,10 @@
 	outline: none;
 }
 
+::selection {
+	background-color: rgb(var(--selection));
+}
+
 ::-webkit-scrollbar {
 	width: 10px;
 	height: 10px;
