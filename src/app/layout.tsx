@@ -4,7 +4,7 @@ import Footer from "@/src/components/Footer";
 import type { Metadata } from "next";
 import { Toaster } from "react-hot-toast";
 import { Inter } from "next/font/google";
-import MainProvider from "../providers/MainProvider";
+import MainProvider from "@/src/providers/MainProvider";
 
 const font = Inter({
 	subsets: ["latin"],
