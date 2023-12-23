@@ -7,7 +7,7 @@ export default function Hero() {
 		<div className="relative isolate py-32 mx-2">
 			<div className="mx-auto max-w-2xl">
 				<div className="hidden sm:mb-8 sm:flex sm:justify-center">
-					<div className="flex items-center gap-2 relative rounded-full px-3 py-1 text-sm leading-6 border-default">
+					<div className="flex items-center gap-2 relative rounded-full px-3 py-1 text-sm leading-6 border-button">
 						BETA VERSION
 						<PingIcon />
 					</div>
