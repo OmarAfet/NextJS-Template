@@ -27,7 +27,15 @@ body {
 }
 
 .header {
-	@apply font-bold text-lg lg:text-3xl;
+	@apply font-bold text-4xl lg:text-6xl;
+}
+
+.title {
+	@apply font-bold text-2xl lg:text-4xl;
+}
+
+.subtitle {
+	@apply font-semibold text-lg lg:text-2xl;
 }
 
 .center {
