@@ -10,7 +10,7 @@ export default function Error({ error }: { error: Error & { digest?: string } })
 
 	return (
 		<div className="h-screen center flex-col gap-8">
-			<div className="flex leading-[48px] header">
+			<div className="flex leading-[48px] title">
 				<h1 className="text-error border-r-2 pr-6 mr-6 uppercase">Error</h1>
 				<p>{error.message}</p>
 			</div>
