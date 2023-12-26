@@ -14,7 +14,7 @@ export default function Hero() {
 				</div>
 				<div className="text-center">
 					<h1 className="font-bold tracking-tight sm:text-6xl">Welcome to <Logo className="sm:text-6xl" /></h1>
-					<p className="mt-6 leading-8 text-default-50">
+					<div className="mt-6 leading-8 text-default-50">
 						A{" "}
 						<Link href="https://nextjs.org/" className="clickable-button">
 							Next.js
@@ -27,7 +27,7 @@ export default function Hero() {
 						<Link href="https://github.com/omarafet" className="clickable-button">
 							@OmarAfet
 						</Link>
-					</p>
+					</div>
 					<div className="mt-10 flex items-center justify-center gap-x-6">
 						<Link href="#" className="primary-button">
 							Get started
