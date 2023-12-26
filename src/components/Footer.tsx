@@ -15,8 +15,8 @@ export default function Footer() {
 						<Image quality={100} priority src="/Github Logo.png" className="w-24 h-24 p-2 opacity-80 dark:opacity-100 invert-0 dark:invert" width={344} height={344} alt="Logo" />
 						<div>
 							<Logo className="text-4xl" />
-							<div className="text-sm text-default-50">
-								<p className="leading-8 text-default-50">
+							<div className="grid gap-2 text-sm text-default-50">
+								<div className="leading-8 text-default-50">
 									A{" "}
 									<Link href="https://nextjs.org/" className="clickable-button">
 										Next.js
@@ -29,13 +29,13 @@ export default function Footer() {
 									<Link href="https://github.com/omarafet" className="clickable-button">
 										@OmarAfet
 									</Link>
-								</p>
-								<p>
+								</div>
+								<div>
 									&copy; {year}{" "}
 									<Link href="" className="clickable-button">
 										Omar Afet
 									</Link>
-								</p>
+								</div>
 							</div>
 						</div>
 					</div>
