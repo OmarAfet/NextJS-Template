@@ -39,7 +39,7 @@ export default function Header() {
 				</div>
 				<Popover.Group className="hidden lg:flex lg:gap-x-12">
 					{links.map((link, index) => (
-						<Link key={index} href={link.href} className="font-semibold clickable-button">
+						<Link key={index} href={link.href} className="font-bold clickable-button">
 							{link.name}
 						</Link>
 					))}
@@ -62,7 +62,7 @@ export default function Header() {
 						<div className="-my-6 divide-y">
 							<div className="space-y-4 py-6">
 								{links.map((link, index) => (
-									<Link key={index} href={link.href} className="-mx-3 block px-3 py-1 font-semibold border-button-left">
+									<Link key={index} href={link.href} className="-mx-3 block px-3 py-1 font-bold border-button-left">
 										{link.name}
 									</Link>
 								))}
