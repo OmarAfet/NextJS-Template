@@ -13,7 +13,7 @@ export default function Hero() {
 					</div>
 				</div>
 				<div className="text-center">
-					<h1 className="font-bold tracking-tight sm:text-6xl">Welcome to <Logo className="sm:text-6xl" /></h1>
+					<h1 className="font-bold tracking-tight header">Welcome to <Logo className="header" /></h1>
 					<div className="mt-6 leading-8 dark:text-default-50">
 						A{" "}
 						<Link href="https://nextjs.org/" className="clickable-button">
