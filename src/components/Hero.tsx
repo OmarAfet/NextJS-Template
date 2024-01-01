@@ -6,7 +6,7 @@ export default function Hero() {
 	return (
 		<div className="relative isolate py-32 mx-2">
 			<div className="mx-auto max-w-2xl">
-				<div className="hidden sm:mb-8 sm:flex sm:justify-center">
+				<div className="mb-8 flex justify-center">
 					<div className="flex items-center gap-2 relative rounded-full px-3 py-1 text-sm leading-6 border-button">
 						BETA VERSION
 						<PingIcon />
@@ -14,7 +14,7 @@ export default function Hero() {
 				</div>
 				<div className="text-center">
 					<h1 className="font-bold tracking-tight header">Welcome to <Logo className="header" /></h1>
-					<div className="mt-6 leading-8 dark:text-default-50">
+					<div className="mt-6 leading-8 text-opacity-80 dark:text-opacity-50">
 						A{" "}
 						<Link href="https://nextjs.org/" className="clickable-button">
 							Next.js

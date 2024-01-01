@@ -1,13 +1,29 @@
 .primary-button {
-	@apply text-white bg-main px-4 py-2 shadow-sm rounded-md cursor-pointer hover:bg-[color-mix(in_srgb,_rgb(var(--background))_20%,_rgb(var(--primary-color)))] active:bg-[color-mix(in_srgb,_rgb(var(--background))_40%,_rgb(var(--primary-color)))];
+	@apply text-white bg-main px-4 py-2 shadow-sm rounded-md cursor-pointer;
+
+	&:hover {
+		background-color: color-mix(in srgb, rgb(var(--background)) 20%, rgb(var(--primary-color)));
+	}
+
+	&:active {
+		background-color: color-mix(in srgb, rgb(var(--background)) 40%, rgb(var(--primary-color)));
+	}
 }
 
 .secondary-button {
-	@apply text-[rgb(var(--text))] bg-[rgb(var(--background))] px-4 py-2 shadow-sm rounded-md border cursor-pointer hover:bg-[color-mix(in_srgb,_rgb(var(--text))_10%,_rgb(var(--background)))] active:bg-[color-mix(in_srgb,_rgb(var(--text))_20%,_rgb(var(--background)))];
+	@apply px-4 py-2 shadow-sm rounded-md border cursor-pointer;
+
+	&:hover {
+		background-color: color-mix(in srgb, rgb(var(--text)) 10%, rgb(var(--background)));
+	}
+
+	&:active {
+		background-color: color-mix(in srgb, rgb(var(--text)) 20%, rgb(var(--background)));
+	}
 }
 
 .clickable-button {
-	@apply border-b-2 transition-[color,border] duration-300 hover:text-[rgb(var(--text))] hover:border-[rgb(var(--text))];
+	@apply border-b-2 transition-colors hover:text-opacity-100 hover:border-opacity-100;
 }
 
 .hoverable-button {
@@ -15,12 +31,5 @@
 }
 
 .border-button {
-	@apply border border-[rgb(var(--border))] hover:border-[rgb(var(--text))] cursor-pointer;
-}
-
-@each $direction in top, right, bottom, left {
-	.border-button-#{$direction} {
-		border-#{$direction}-width: 2px;
-		@apply hover:border-[rgb(var(--text))];
-	}
+	@apply border cursor-pointer hover:border-opacity-100;
 }

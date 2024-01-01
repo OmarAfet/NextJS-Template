@@ -1,15 +1,10 @@
 * {
-	transition:
-		background-color 300ms,
-		filter 300ms,
-		border-color 300ms;
+	transition: background-color, filter, border-color;
 
-	border-color: rgb(var(--border));
+	transition-duration: 300ms !important;
+
+	border-color: color-mix(in srgb, rgb(var(--background)), rgb(var(--text)) 10%);
 	outline: none;
-}
-
-::selection {
-	background-color: rgb(var(--selection));
 }
 
 ::-webkit-scrollbar {
@@ -18,24 +13,24 @@
 }
 
 ::-webkit-scrollbar-thumb {
-	background: rgb(var(--border));
+	background-color: color-mix(in srgb, rgb(var(--background)), rgb(var(--text)) 20%);
 }
 
 body {
 	background-color: rgb(var(--background));
-	color: rgb(var(--text));
+	color: color-mix(in srgb, rgb(var(--text)) 80%, #0000);
 }
 
 .header {
-	@apply font-bold text-4xl lg:text-6xl;
+	@apply font-bold text-4xl lg:text-6xl text-opacity-100;
 }
 
 .title {
-	@apply font-bold text-2xl lg:text-4xl;
+	@apply font-bold text-2xl lg:text-4xl text-opacity-100;
 }
 
 .subtitle {
-	@apply font-bold text-lg lg:text-2xl;
+	@apply font-bold text-lg lg:text-2xl text-opacity-100;
 }
 
 .center {
@@ -44,4 +39,20 @@ body {
 
 .animate {
 	@apply transition-all duration-300;
+}
+
+.sidebar {
+	background-color: rgb(var(--background));
+
+	& .button {
+		@apply border-l-2 hover:border-opacity-100;
+	}
+}
+
+.footer {
+	background-color: color-mix(in srgb, rgb(var(--text)) 3%, #0000);
+
+	& .head {
+		@apply font-bold text-opacity-100;
+	}
 }

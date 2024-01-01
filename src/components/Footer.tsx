@@ -8,14 +8,14 @@ export default function Footer() {
 	const year = new Date().getFullYear();
 
 	return (
-		<footer className="p-8 bg-default-2">
+		<footer className="p-8 footer">
 			<div className="xl:grid grid-cols-3 gap-8">
 				<div className="flex flex-col gap-4">
 					<div className="flex gap-4">
 						<Image quality={100} priority src="/Github Logo.png" className="w-24 h-24 p-2 opacity-80 dark:opacity-100 invert-0 dark:invert" width={344} height={344} alt="Logo" />
 						<div>
-							<Logo className="text-4xl" />
-							<div className="grid gap-2 text-sm dark:text-default-50">
+							<Logo className="title" />
+							<div className="grid gap-2 text-sm text-opacity-80 dark:text-opacity-50">
 								<div className="leading-8">
 									A{" "}
 									<Link href="https://nextjs.org/" className="clickable-button">
@@ -44,7 +44,7 @@ export default function Footer() {
 				<div className="md:grid col-span-2 grid-cols-2 gap-8 mt-16 xl:mt-0">
 					<div className="grid grid-cols-2 gap-8">
 						<div>
-							<div className="font-bold">Solutions</div>
+							<div className="head">Solutions</div>
 							<div className="mt-6 flex flex-col">
 								<div className="mt-4">
 									<Link href="#" className="clickable-button">
@@ -69,7 +69,7 @@ export default function Footer() {
 							</div>
 						</div>
 						<div>
-							<div className="font-bold">Support</div>
+							<div className="head">Support</div>
 							<div className="mt-6  flex flex-col">
 								<div className="mt-4">
 									<Link href="#" className="clickable-button">
@@ -96,7 +96,7 @@ export default function Footer() {
 					</div>
 					<div className="grid grid-cols-2 gap-8 mt-8 md:mt-0">
 						<div>
-							<div className="font-bold">Company</div>
+							<div className="head">Company</div>
 							<div className="mt-6  flex flex-col">
 								<div className="mt-4">
 									<Link href="#" className="clickable-button">
@@ -121,7 +121,7 @@ export default function Footer() {
 							</div>
 						</div>
 						<div>
-							<div className="font-bold">Legal</div>
+							<div className="head">Legal</div>
 							<div className="mt-6  flex flex-col">
 								<div className="mt-4">
 									<Link href="#" className="clickable-button">
