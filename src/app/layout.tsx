@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/common/Header";
 import Footer from "@/components/common/Footer";
-import { ThemeProvider } from "@/providers/ThemeProvider";
 import MainProvider from "@/providers/MainProvider";
 import { Toaster } from "@/components/ui/toaster";
 
