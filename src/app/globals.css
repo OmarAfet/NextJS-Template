@@ -24,7 +24,7 @@
 }
 
 .link {
-	@apply border-b-2 hover:border-foreground hover:text-foreground animate;
+	@apply border-b-2 hover:border-foreground hover:text-foreground cursor-pointer animate;
 }
 
 .center {
