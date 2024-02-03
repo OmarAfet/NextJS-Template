@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 
 export default function Hero() {
 	return (
@@ -14,11 +14,11 @@ export default function Hero() {
 				</p>
 			</div>
 			<div className="flex gap-4">
-				<Link href="/">
-					<Button>Get Started</Button>
+				<Link className={buttonVariants({ variant: "default" })} href="/">
+					Get Started
 				</Link>
-				<Link href="/about">
-					<Button variant="outline">Read More</Button>
+				<Link className={buttonVariants({ variant: "outline" })} href="/about">
+					Read More
 				</Link>
 			</div>
 		</div>

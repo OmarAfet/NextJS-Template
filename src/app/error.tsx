@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import { useEffect } from "react";
@@ -20,11 +20,11 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
 				</p>
 			</div>
 			<div className="flex flex-wrap center gap-4">
-				<Button variant="outline">
-					<Link href="/">Return Home</Link>
-				</Button>
-				<Link href="/contact">
-					<Button>Contact Us</Button>
+				<Link className={buttonVariants({ variant: "default" })} href="/">
+					Return Home
+				</Link>
+				<Link className={buttonVariants({ variant: "outline" })} href="/contact">
+					Contact Us
 				</Link>
 			</div>
 		</div>
