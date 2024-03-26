@@ -19,7 +19,7 @@ Hello there! Welcome to the About page for the Next.js template crafted by @Omar
 To get started with this template, follow these simple steps:
 
 ```bash
-git clone https://github.com/OmarAfet/nextjs-template.git .
+git clone https://github.com/OmarAfet/template.git .
 git remote rm origin
 npm i
 npm run dev
